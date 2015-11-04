@@ -1,5 +1,5 @@
 require 'rspec'
-require 'practice'
+require 'uniq'
 
 describe Array do
   describe "#uniq" do
