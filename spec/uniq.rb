@@ -2,13 +2,14 @@ require 'rspec'
 require 'practice'
 
 describe Array do
-  describe ".uniq" do
+  describe "#uniq" do
     it "returns an empty array for an empty array" do
       expect([].uniq).to eq([])
     end
 
     it "returns self for single element array" do
-      expect([1].uniq).to eq([1])
+      single_array = [1]
+      expect(single_array.uniq).to be(single_array)
     end
 
     it "does not change arrays within array" do
@@ -16,7 +17,7 @@ describe Array do
     end
 
     it "raises an error if not passed an array" do
-      expect {"string".uniq}.to raise_error
+      expect { "string".uniq }.to raise_error
     end
 
     it "returns a unique array" do
