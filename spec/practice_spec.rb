@@ -26,3 +26,4 @@ describe Array do
 end
 
 #comment
+#another comment
