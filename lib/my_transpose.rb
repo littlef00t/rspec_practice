@@ -16,11 +16,11 @@ class Array
 
   # def my_transpose
   #   dimension = self.first.count
-  #   cols = Array.new {dimension}
+  #   cols = Array.new(dimension) {Array.new}
   #
   #   self.each_with_index do |row, idx|
   #     row.each_with_index do |col, idx2|
-  #       cols[idx] = self[idx2]
+  #       cols[idx] << self[idx][idx2]
   #     end
   #   end
   #
